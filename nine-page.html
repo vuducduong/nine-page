@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nine-page</title>
+</head>
+<body>
+<script>
+    let ninePage;
+    ninePage = "<table border='1' width='300' cellspacing='0' cellpadding='13' >";
+    for (let i = 1; i <= 9; i++) {
+        ninePage += '<tr>';
+        for (let j = 2; j <= 9; j++) {
+            ninePage += '<td>' + j + 'x' + i + '=' + (i * j) + '</td>';
+        }
+        ninePage += '</tr>';
+    }
+    ninePage += "</table>";
+    document.write(ninePage);
+</script>
+</body>
+</html>
